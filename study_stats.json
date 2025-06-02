@@ -1,0 +1,19 @@
+{
+  "total_questions": 5,
+  "correct_answers": 2,
+  "sessions": [
+    {
+      "date": "2025-06-01T20:23:09.481296",
+      "category": "Data Structures",
+      "score": 2,
+      "total": 5,
+      "percentage": 40.0
+    }
+  ],
+  "category_stats": {
+    "Data Structures": {
+      "correct": 2,
+      "total": 5
+    }
+  }
+}
