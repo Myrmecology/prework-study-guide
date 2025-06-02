@@ -1,26 +1,86 @@
 # 🎓 Prework Study Guide
 
-A beautiful, interactive command-line quiz application designed to help you master programming fundamentals and prepare for technical interviews.
+# Prework Study Guide
 
-![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
-![Rich](https://img.shields.io/badge/Rich-CLI-brightgreen.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+A command-line quiz application for programming fundamentals and technical interview preparation.
 
-## ✨ Features
+## What it does
 
-- **📚 Multiple Quiz Categories**: Data Structures, Algorithms, Python Programming, and Big O Notation
-- **🎯 Flexible Quiz Modes**: Category-specific quizzes or mixed random questions
-- **📊 Progress Tracking**: Detailed statistics and performance analytics
-- **💡 Educational**: Each question includes detailed explanations
-- **🎨 Beautiful Interface**: Colorful, professional CLI using the Rich library
-- **📈 Session History**: Track your improvement over time
+Interactive quiz tool covering:
+- Data Structures (arrays, stacks, queues, trees, hash tables)
+- Algorithms (sorting, searching, complexity analysis)  
+- Python Programming (syntax, data types, OOP)
+- Big O Notation (time and space complexity)
 
-## 🚀 Quick Start
+Features progress tracking, detailed explanations, and colorful terminal interface.
 
-### Installation
+## Requirements
 
-1. **Clone the repository**:
+- Python 3.7 or higher
+- pip (Python package installer)
+
+## Installation
+
+1. Clone this repository:
 ```bash
-git clone https://github.com/Myrmecology/prework-study-guide#.git
+git clone https://github.com/Myrmecology/prework-study-guide.git
 cd Prework-Study-Guide
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## How to run
+
+```bash
+python quiz_app.py
+```
+
+## Usage
+
+When you run the application, you'll see a menu with these options:
+
+1. **Start Quiz by Category** - Choose specific topics (Data Structures, Algorithms, etc.)
+2. **Random Mixed Quiz** - Get random questions from all categories
+3. **View Study Statistics** - See your progress and performance over time
+4. **Help** - Instructions and tips
+5. **Exit** - Close the application
+
+### During a quiz:
+- Answer multiple choice questions by typing 1, 2, 3, or 4
+- Get immediate feedback with explanations
+- See your final score and percentage
+
+### Statistics tracking:
+- Overall accuracy rate
+- Performance by category
+- Session history with timestamps
+- All data saved locally in `study_stats.json`
+
+## Quick start example
+
+```bash
+# Install and run
+pip install rich
+python quiz_app.py
+
+# Choose option 1 for category quiz
+# Select a category (e.g., Data Structures)
+# Answer the questions
+# View your results
+```
+
+## Adding questions
+
+To add more questions, edit the `QUIZ_DATA` dictionary in `quiz_app.py`. Each question needs:
+- `question`: The question text
+- `options`: List of 4 possible answers
+- `correct`: Index of correct answer (0-3)
+- `explanation`: Why the answer is correct
+
+## License
+
+MIT License - feel free to use and modify.
 Happy coding
